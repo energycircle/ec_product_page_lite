@@ -30,17 +30,23 @@ function ec_product_page_lite_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_default_roles_permissions_alter().
+ * Implements hook_user_default_permissions_alter().
  */
-function ec_product_page_lite_default_roles_permissions_alter(&$data) {
-  if (isset($data['EC Platinum admin'])) {
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page breadcrumbs'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page context'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page defaults'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page layout'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page overview'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page settings'] = TRUE; /* WAS: '' */
+function ec_product_page_lite_user_default_permissions_alter(&$data) {
+  if (isset($data['create product_page content'])) {
+    unset($data['create product_page content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['delete any product_page content'])) {
+    unset($data['delete any product_page content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['delete own product_page content'])) {
+    unset($data['delete own product_page content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['edit any product_page content'])) {
+    unset($data['edit any product_page content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['edit own product_page content'])) {
+    unset($data['edit own product_page content']['roles']['EC Platinum admin']);
   }
 }
 
