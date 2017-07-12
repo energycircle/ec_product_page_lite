@@ -134,7 +134,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 22,
+      'weight' => 25,
     ),
   );
 
@@ -1196,7 +1196,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 30,
     ),
   );
 
@@ -1261,7 +1261,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 29,
     ),
   );
 
@@ -1326,7 +1326,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 41,
     ),
   );
 
