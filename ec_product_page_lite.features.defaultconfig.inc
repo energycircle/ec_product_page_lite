@@ -1546,7 +1546,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 2,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1653,7 +1653,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
