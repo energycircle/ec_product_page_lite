@@ -1132,7 +1132,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 26,
+      'weight' => 21,
     ),
   );
 
@@ -1390,7 +1390,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 25,
+      'weight' => 18,
     ),
   );
 
